@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Count Form Elements</title>
+    <script type="text/javascript">
+      function countFormEle() {
+        alert("The number of elements in Form are: " + document.myForm.length);
+      }
+    </script>
+  </head>
+  <body bgcolor="cyan">
+    <form name="myForm">
+      1.Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="text" /> <br />
+      <br />
+
+      2.Password:&nbsp
+      <input type="password" /> <br />
+      <br />
+
+      3.Address:&nbsp;&nbsp;&nbsp;&nbsp;
+      <textarea cols="50" rows="10"></textarea> <br /><br />
+
+      4.Sex:&nbsp;&nbsp;&nbsp; <input type="radio" name="gender" />Male
+      <input type="radio" /> Female <br />
+      <br />
+
+      5.Newsletter:&nbsp&nbsp;&nbsp; <input type="checkbox" /> <br />
+      <br />
+
+      <input
+        type="button"
+        value="Count Form Elements"
+        onclick="countFormEle()"
+      />
+    </form>
+  </body>
+</html>
